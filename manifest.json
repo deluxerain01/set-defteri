@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Set Defteri — Antrenman Takibi",
+  "short_name": "Set Defteri",
+  "lang": "tr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#10141c",
+  "theme_color": "#10141c",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192' viewBox='0 0 180 180'%3E%3Cpath fill='%2310141c' d='M0 0h180v180H0z'/%3E%3Cpath fill='%23b5f46a' d='M35 55h24v70H35zM121 55h24v70h-24zM59 81h62v18H59z'/%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512' viewBox='0 0 180 180'%3E%3Cpath fill='%2310141c' d='M0 0h180v180H0z'/%3E%3Cpath fill='%23b5f46a' d='M35 55h24v70H35zM121 55h24v70h-24zM59 81h62v18H59z'/%3E%3C/svg%3E",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

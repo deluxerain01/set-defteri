@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#10141c">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Set Defteri">
+  <link rel="manifest" href="./manifest.json">
+  <link id="apple-icon" rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAYAAAA9zQYyAAAFcUlEQVR4Aezcy43rRhRFUaEj8MBDDxyRE3jxOQFH5ExsPAhoQHz6kaoq3s9qQI2mSN66Z5897q/ffv/jPx8MqjjwdfGDQCEChC5UpiiXC6FZUIoAoUvVKQyh2zjQIyihe/TcJiWh21TdIyihe/TcJiWh21TdIyihe/TcJiWhL5dLm7YbBCV0g5I7RSR0p7YbZCV0g5I7RSR0p7YbZCV0g5I7RXwhdCcUslYgQOgKLcrwTYDQ3yj8UYEAoSu0KMM3AUJ/o/BHBQKErtDiiAxFZhC6SJFiXAkQ+srB7yIECF2kSDGuBAh95eB3EQKELlKkGFcChL5yePbbvUQECJ2oLKu+JkDo14w8kYgAoROVZdXXBAj9mpEnEhEgdKKyrPqawGdCv57vCQSWEiD0UtwOm02A0LMJm7+UAKGX4nbYbAKEnk3Y/KUECL0Ud97DsmxO6CxN2fMtAoR+C5OHshAgdJam7PkWAUK/hclDWQgQOktT9nyLAKHfwvTsIfciESB0pDbs8jEBQn+M0IBIBAgdqQ27fEyA0B8jNCASAUJHasMuHxOYKvTH2xmAwE4ChN4JzOOxCRA6dj+220mA0DuBeTw2gVBC//3vX5eZn9hVzNtuJtOfs+dtvn9yKKH3r++NIATCrEHoMFVYZAQBQo+gaEYYAoQOU4VFRhAg9AiKZoQhQOgwVVhkBAFCj6D4bIZ7SwkQeiluh80mQOjZhM1fSoDQS3E7bDYBQs8mbP5SAoReitthswmcKfTsbOY3JEDohqVXjkzoyu02zEbohqVXjkzoyu02zEbohqWvj7zuREKvY+2kBQQIvQCyI9YRIPQ61k5aQIDQCyA7Yh0BQq9j7aQFBAi9APKzI9wbS4DQY3madjKBVkL//C8/HT8nO7b0+FZCLyXrsFMIEPoU7A6dRYDQs8iaewqBwEKfwsOhyQkQOnmB1r8lQOhbHq6SEyB08gKtf0uA0Lc8XCUnQOjkBZZYf2AIQg+EadT5BAh9fgc2GEiA0ANhGnU+AUKf34ENBhIg9ECYRp1PgNDnd/BsA/d2EiD0TmAej02A0LH7sd1OAq2E/vHnP5eOn51OpH78K/X2lkdgQ4DQGyAucxPIK3Ru7rafRIDQk8Aaew4BQp/D3amTCBB6ElhjzyFA6HO4O3USAUJPAmvsOAJ7JhF6Dy3PhidA6PAVWXAPAULvoeXZ8AQIHb4iC+4hQOg9tDwbngChw1f0bEH3tgQIvSXiOjUBQqeuz/JbAoTeEnGdmgChU9dn+S0BQm+JuE5NoKzQqVux/GEChD6MzosRCRA6Yit2OkyA0IfReTEiAUJHbMVOhwkQ+jA6LwYhcLNGKKF/TP7PRjfJG1104vrVqFdRGxAgdIOSO0UkdKe2G2QldIOSO0UkdOW2G2YjdMPSK0cmdOV2G2YjdMPSK0cmdOV2G2YjdMPSK0fuKnTlTltnI3Tr+uuFJ3S9TlsnInTr+uuFJ3S9TlsnInTr+uuF/1XoehklakSA0I3K7hCV0B1abpSR0I3K7hCV0B1abpSR0I3K3kateE3oiq02zkToxuVXjE7oiq02zkToxuVXjE7oiq02zkTou+X7MisBQmdtzt53CRD6LhZfZiVA6KzN2fsuAULfxeLLrAQInbU5e98lsFvou1N8iUAQAoQOUoQ1xhAg9BiOpgQhQOggRVhjDAFCj+FoShAChA5SRMA1Uq5E6JS1WfoRAUI/IuP7lAQInbI2Sz8iQOhHZHyfkgChU9Zm6UcECP2IzLPv3QtLgNBhq7HYEQKEPkLNO2EJEDpsNRY7QoDQR6h5JywBQoetxmJHCIwW+sgO3kFgGAFCD0NpUAQChI7Qgh2GESD0MJQGRSDwPwAAAP//QCEc8AAAAAZJREFUAwD2uSvTtkqZjQAAAABJRU5ErkJggg==">
+  <title>Set Defteri</title>
+  <style>
+    /* Tema ve iPhone güvenli alanları */
+    :root{color-scheme:dark;--bg:#10141c;--card:#1b2230;--ink:#f3f6fc;--muted:#adb8ca;--line:#354157;--accent:#b5f46a;--onaccent:#18240e;--danger:#ff9a9a}
+    [data-theme=light]{color-scheme:light;--bg:#f3f5f8;--card:#fff;--ink:#172133;--muted:#526079;--line:#c6ceda;--accent:#3b6811;--onaccent:#fff;--danger:#a72626}
+    *{box-sizing:border-box}html{touch-action:manipulation}summary{min-height:48px;padding:10px 0;cursor:pointer}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 system-ui,-apple-system,sans-serif;padding:env(safe-area-inset-top) env(safe-area-inset-right) 0 env(safe-area-inset-left)}
+    header,main{max-width:640px;margin:auto;padding:18px}header{display:flex;align-items:center;justify-content:space-between;gap:12px}h1{font-size:23px;margin:0}h2{font-size:20px;margin:0 0 14px}h3{font-size:17px;margin:0 0 10px}p{margin:10px 0}main{padding-top:0;padding-bottom:calc(110px + env(safe-area-inset-bottom))}
+    button,input,select{font:inherit;font-size:16px;min-height:48px;border:1px solid var(--line);border-radius:12px;padding:10px;color:var(--ink);background:var(--bg)}button{cursor:pointer;touch-action:manipulation;font-weight:650}input,select{width:100%;min-width:0}button:disabled{opacity:.45;cursor:default}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+    button.primary{background:var(--accent);color:var(--onaccent);border-color:var(--accent)}button.danger{color:var(--danger)}label{display:block;color:var(--muted);font-size:14px;margin-bottom:6px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;margin-bottom:14px}.row{display:flex;gap:8px;align-items:center}.row>*{min-width:0}.grow{flex:1}.stack{display:grid;gap:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.muted,small{color:var(--muted)}.badge{display:inline-block;font-size:12px;background:var(--accent);color:var(--onaccent);padding:2px 7px;border-radius:8px}.tag{font-size:12px;color:var(--muted)}.full{width:100%}.hidden,[hidden]{display:none!important}
+    .stepper{display:grid;grid-template-columns:48px 1fr 48px;gap:5px}.stepper input{text-align:center}.set{border-top:1px solid var(--line);padding:12px 0}.set .row{margin-top:8px}.set input{max-width:140px}.set label{margin:0}.timer-number{font-size:34px;line-height:1.2;font-variant-numeric:tabular-nums}.finished{border:2px solid var(--accent)}#storage-warning{margin:0 18px 14px;padding:12px;border:2px solid var(--danger);border-radius:12px;color:var(--danger)}
+    nav{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);padding:8px max(8px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));display:grid;grid-template-columns:repeat(4,1fr);gap:4px;z-index:10}nav button{font-size:13px;border:0;background:transparent;padding:8px 3px}nav button[aria-current=page]{background:var(--accent);color:var(--onaccent)}
+    dialog{width:calc(100% - 28px);max-width:480px;max-height:85dvh;overflow:auto;background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:18px;padding:20px}dialog::backdrop{background:#000a}#toast{position:fixed;bottom:calc(90px + env(safe-area-inset-bottom));left:16px;right:16px;max-width:608px;margin:auto;background:var(--ink);color:var(--bg);padding:12px;border-radius:12px;z-index:30;pointer-events:none}canvas{display:block;width:100%;height:250px}.legend{display:flex;gap:16px;font-size:13px}.legend span:first-child{color:var(--accent)}.legend span:last-child{color:#6f9fff}a{color:var(--accent)}
+  </style>
+</head>
+<body>
+  <header><div><h1>Set Defteri</h1><small>Cihazında, her set yanında.</small></div><small id="save-state" role="status"></small></header>
+  <div id="storage-warning" role="alert" hidden></div>
+  <main id="content"></main>
+  <nav aria-label="Ana gezinme">
+    <button data-tab="workout">Antrenman</button><button data-tab="history">Geçmiş</button><button data-tab="progress">İlerleme</button><button data-tab="settings">Ayarlar</button>
+  </nav>
+  <dialog id="exercise-dialog">
+    <form id="exercise-form" class="stack">
+      <h2 id="dialog-title">Egzersiz ekle</h2>
+      <div><label for="exercise-name">Egzersiz adı</label><input id="exercise-name" maxlength="80" required autocomplete="off"></div>
+      <div><label for="exercise-group">Kas grubu</label><select id="exercise-group"></select></div>
+      <div class="row"><button type="button" id="close-dialog" class="grow">Vazgeç</button><button class="primary grow">Tamam</button></div>
+    </form>
+  </dialog>
+  <div id="toast" role="status" hidden></div>
+  <script>
+    'use strict';
+    /* VERİ MODELİ (v1)
+       {version:1, exercises:[{id,name,group,archived}],
+        workouts:[{id,date:'YYYY-MM-DD',createdAt,entries:[{exerciseId,
+          sets:[{id,weightKg,reps,at}]}]}],
+        settings:{unit:'kg'|'lb',theme:'dark'|'light',rest:60|90|120|180},
+        activeWorkoutId:null|id, timer:{endAt,duration}|null}
+       Zamanlar epoch milisaniye. Tarih cihazın yerel günüdür.
+       Ağırlık her zaman kg; lb yalnızca giriş/gösterim dönüşümüdür.
+       Silinen egzersiz arşivlenir; geçmiş ve grafik bağlantıları korunur.
+       PR ve grafik türetilir; yedekte ayrı bir kopyaları tutulmaz.
+    */
+    const KEY='set-defteri-v1', GROUPS=['göğüs','sırt','bacak','omuz','kol','karın'], RESTS=[60,90,120,180], LB=2.2046226218;
+    const $=s=>document.querySelector(s), uid=()=>crypto.randomUUID?crypto.randomUUID():Date.now().toString(36)+Math.random().toString(36).slice(2);
+    const today=()=>{const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;};
+    const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    const num=s=>{const t=String(s).trim().replace(',','.');return /^\d+(\.\d+)?$/.test(t)?Number(t):NaN;};
+    const round=n=>Math.round(n*10000)/10000, fmt=n=>new Intl.NumberFormat('tr-TR',{maximumFractionDigits:2}).format(n);
+    const dateLabel=d=>new Date(d+'T12:00:00').toLocaleDateString('tr-TR',{day:'numeric',month:'short',year:'numeric'});
+    const defaults=()=>({version:1,exercises:[['Bench Press','göğüs'],['Lat Pulldown','sırt'],['Squat','bacak'],['Shoulder Press','omuz'],['Biceps Curl','kol'],['Crunch','karın']].map(([name,group])=>({id:uid(),name,group,archived:false})),workouts:[],settings:{unit:'kg',theme:'dark',rest:90},activeWorkoutId:null,timer:null});
+    let storageBlocked=false,brokenRaw=null,tab='workout',selected='',progressId='',editingExercise=null,toastTimeout;
+    const validId=v=>typeof v==='string'&&v.length>0&&v.length<=100;
+    const finite=v=>typeof v==='number'&&Number.isFinite(v);
+    // Yükleme ve içe aktarma aynı sıkı şema denetimini kullanır.
+    function validate(v){
+      const fail=()=>{throw Error('Dosya biçimi veya veri alanları geçersiz.');};
+      if(!v||v.version!==1||!Array.isArray(v.exercises)||!Array.isArray(v.workouts)||!v.settings)fail();
+      const ids=new Set(),workoutIds=new Set(),setIds=new Set();
+      for(const e of v.exercises){if(!e||!validId(e.id)||ids.has(e.id)||typeof e.name!=='string'||!e.name.trim()||e.name.length>80||!GROUPS.includes(e.group)||typeof e.archived!=='boolean')fail();ids.add(e.id);}
+      for(const w of v.workouts){
+        if(!w||!validId(w.id)||workoutIds.has(w.id)||typeof w.date!=='string'||!/^\d{4}-\d{2}-\d{2}$/.test(w.date)||!Number.isFinite(Date.parse(w.date+'T12:00:00Z'))||new Date(w.date+'T12:00:00Z').toISOString().slice(0,10)!==w.date||!finite(w.createdAt)||w.createdAt<0||!Array.isArray(w.entries))fail();
+        workoutIds.add(w.id);const entryIds=new Set();
+        for(const en of w.entries){
+          if(!en||!ids.has(en.exerciseId)||entryIds.has(en.exerciseId)||!Array.isArray(en.sets))fail();entryIds.add(en.exerciseId);
+          for(const s of en.sets){if(!s||!validId(s.id)||setIds.has(s.id)||!finite(s.weightKg)||s.weightKg<0||s.weightKg>10000||!Number.isInteger(s.reps)||s.reps<1||s.reps>1000||!finite(s.at)||s.at<0)fail();setIds.add(s.id);}
+        }
+      }
+      if(!['kg','lb'].includes(v.settings.unit)||!['dark','light'].includes(v.settings.theme)||!RESTS.includes(v.settings.rest)||(v.activeWorkoutId!==null&&!workoutIds.has(v.activeWorkoutId)))fail();
+      if(v.timer!==null&&(!v.timer||!finite(v.timer.endAt)||v.timer.endAt<0||!RESTS.includes(v.timer.duration)))fail();
+      // Bilinmeyen alanları taşımayız; import edilen nesneye güvenmeyiz.
+      return {version:1,exercises:v.exercises.map(e=>({id:e.id,name:e.name.trim(),group:e.group,archived:e.archived})),workouts:v.workouts.map(w=>({id:w.id,date:w.date,createdAt:w.createdAt,entries:w.entries.map(en=>({exerciseId:en.exerciseId,sets:en.sets.map(s=>({id:s.id,weightKg:s.weightKg,reps:s.reps,at:s.at}))}))})),settings:{unit:v.settings.unit,theme:v.settings.theme,rest:v.settings.rest},activeWorkoutId:v.activeWorkoutId,timer:v.timer?{endAt:v.timer.endAt,duration:v.timer.duration}:null};
+    }
+    function warning(message){$('#storage-warning').textContent=message;$('#storage-warning').hidden=false;$('#save-state').textContent='Kayıt sorunu';}
+    function load(){
+      try{const raw=localStorage.getItem(KEY);if(raw!==null){brokenRaw=raw;const parsed=validate(JSON.parse(raw));brokenRaw=null;return parsed;}}
+      catch(err){storageBlocked=brokenRaw!==null;warning(storageBlocked?'Saklanan veri okunamadı. Üzerine yazılmıyor; Ayarlar’dan bozuk veriyi indirip geçerli yedek içe aktar. Yeni girişler şimdilik yalnızca bellekte.':'Cihaz depolamasına erişilemiyor. Girişler yalnızca bellekte; çıkmadan JSON yedeği al.');}
+      return defaults();
+    }
+    let data=load();
+    function save(){
+      try{if(storageBlocked)throw Error('Bozuk kaydın üzerine yazma engellendi.');localStorage.setItem(KEY,JSON.stringify(data));$('#storage-warning').hidden=true;$('#save-state').textContent='Cihaza kaydedildi';return true;}
+      catch(err){warning(storageBlocked?'Bozuk kayıt korunuyor. Ayarlar’dan kurtarma dosyasını indir; geçerli yedek içe aktar. Yeni girişler yalnızca bellekte.':'Cihaza kaydedilemedi. Sayfayı kapatmadan Ayarlar’dan JSON yedeği indir.');return false;}
+    }
+    function toast(message){clearTimeout(toastTimeout);$('#toast').textContent=message;$('#toast').hidden=false;toastTimeout=setTimeout(()=>$('#toast').hidden=true,3500);}
+    const unit=()=>data.settings.unit,displayWeight=kg=>kg*(unit()==='lb'?LB:1),toKg=v=>round(v/(unit()==='lb'?LB:1)),rm=s=>s.weightKg*(1+s.reps/30);
+    const exercise=id=>data.exercises.find(e=>e.id===id),active=()=>data.workouts.find(w=>w.id===data.activeWorkoutId);
+    const ordered=()=>data.workouts.slice().sort((a,b)=>a.date.localeCompare(b.date)||a.createdAt-b.createdAt||a.id.localeCompare(b.id));
+    function options(list,value){return list.map(e=>`<option value="${esc(e.id)}" ${e.id===value?'selected':''}>${esc(e.name)}${e.archived?' (arşiv)':''}</option>`).join('');}
+    function records(){
+      const best=new Map(),badges=new Map();
+      for(const w of ordered())for(const en of w.entries){const b=best.get(en.exerciseId)||{weight:-1,rm:-1};for(const s of en.sets.slice().sort((a,b)=>a.at-b.at||a.id.localeCompare(b.id))){const flags=[];if(s.weightKg>b.weight+0.0001)flags.push('Ağırlık PR');if(rm(s)>b.rm+0.0001)flags.push('1RM PR');badges.set(s.id,flags);b.weight=Math.max(b.weight,s.weightKg);b.rm=Math.max(b.rm,rm(s));}best.set(en.exerciseId,b);}
+      return badges;
+    }
+    function previous(w,id){const list=ordered();return list.slice(0,list.findIndex(x=>x.id===w.id)).reverse().map(x=>({w:x,en:x.entries.find(en=>en.exerciseId===id)})).find(x=>x.en?.sets.length);}
+    // Görünümler: seçim değişse de tüm işlemler anında yerel kayda gider.
+    function render(){
+      document.documentElement.dataset.theme=data.settings.theme;document.querySelector('meta[name="theme-color"]').content=data.settings.theme==='dark'?'#10141c':'#f3f5f8';
+      document.querySelectorAll('[data-tab]').forEach(b=>{if(b.dataset.tab===tab)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
+      $('#content').innerHTML=({workout:workoutView,history:historyView,progress:progressView,settings:settingsView}[tab])();
+      if(tab==='progress')drawChart();if(tab==='workout')tick();
+    }
+    function workoutView(){
+      const w=active(),available=data.exercises.filter(e=>!e.archived||w?.entries.some(en=>en.exerciseId===e.id));
+      if(!available.some(e=>e.id===selected))selected=available[0]?.id||'';
+      const entry=w?.entries.find(en=>en.exerciseId===selected),prev=w&&selected?previous(w,selected):null,badges=records();
+      return `<div class="row" style="margin-bottom:14px"><button class="primary grow" data-action="new-workout">Yeni antrenman başlat</button><button data-action="manage">Egzersizler</button></div>
+        ${!w?'<div class="card"><h2>Bir setle başla.</h2><p class="muted">Yeni antrenman aç veya Geçmiş’ten bir kaydı seç.</p></div>':`<section class="card"><h2>${w.date===today()?'Bugünkü antrenman':'Antrenman düzenle'}</h2><label for="workout-date">Antrenman tarihi</label><input id="workout-date" type="date" value="${w.date}"><p class="muted">${w.entries.reduce((n,en)=>n+en.sets.length,0)} set · Değişiklikler otomatik kaydedilir.</p></section>
+        <section class="card"><label for="workout-exercise">Egzersiz seç</label><select id="workout-exercise">${options(available,selected)}</select>${!available.length?'<p>Önce Egzersizler’den bir egzersiz ekle.</p>':`<p class="tag">${esc(exercise(selected).group)}</p><h3>Geçen sefer</h3><p class="muted">${prev?`${dateLabel(prev.w.date)} · ${prev.en.sets.map(s=>`${fmt(displayWeight(s.weightKg))} ${unit()} × ${s.reps}`).join(' / ')}`:'Henüz önceki set yok.'}</p>
+        <form id="set-form"><div class="two"><div><label for="weight">Ağırlık (${unit()})</label><div class="stepper"><button type="button" data-step="weight" data-sign="-1" aria-label="Ağırlığı azalt">−</button><input id="weight" inputmode="decimal" value="${entry?.sets.length?String(round(displayWeight(entry.sets.at(-1).weightKg))):'0'}" required><button type="button" data-step="weight" data-sign="1" aria-label="Ağırlığı artır">+</button></div></div><div><label for="reps">Tekrar</label><div class="stepper"><button type="button" data-step="reps" data-sign="-1" aria-label="Tekrarı azalt">−</button><input id="reps" inputmode="numeric" value="${entry?.sets.at(-1)?.reps||10}" required><button type="button" data-step="reps" data-sign="1" aria-label="Tekrarı artır">+</button></div></div></div><button class="primary full" style="margin-top:12px">Set ekle ve dinlen</button></form>
+        <h3 style="margin-top:20px">Kaydedilen setler</h3><small>Alanı değiştirip dışına dokun: otomatik kaydedilir.</small>
+        ${(entry?.sets||[]).map((s,i)=>`<div class="set"><div class="row" data-pr="${esc(s.id)}"><strong class="grow">Set ${i+1}</strong>${(badges.get(s.id)||[]).map(b=>`<span class="badge">${b}</span>`).join('')}</div><div class="row"><div class="grow"><label>Ağırlık (${unit()})<input aria-label="Set ${i+1} ağırlık" inputmode="decimal" data-set="${esc(s.id)}" data-field="weightKg" value="${round(displayWeight(s.weightKg))}"></label></div><div class="grow"><label>Tekrar<input aria-label="Set ${i+1} tekrar" inputmode="numeric" data-set="${esc(s.id)}" data-field="reps" value="${s.reps}"></label></div><button class="danger" data-action="delete-set" data-id="${esc(s.id)}" aria-label="Set ${i+1} sil">Sil</button></div></div>`).join('')||'<p class="muted">Henüz set yok.</p>'}`}</section>
+        <section class="card" id="timer-card"><div class="row"><div class="grow"><h3>Dinlenme</h3><div id="timer-number" class="timer-number" role="timer">Hazır</div></div><button data-action="stop-timer">Kapat</button></div><label for="rest-duration">Bir sonraki setin dinlenmesi</label><select id="rest-duration">${RESTS.map(s=>`<option value="${s}" ${s===data.settings.rest?'selected':''}>${s} saniye</option>`).join('')}</select><p id="timer-note" class="muted">Set ekleyince başlar.</p></section>`}`;
+    }
+    function historyView(){return `<h2>Geçmiş</h2>${ordered().reverse().map(w=>`<section class="card"><h3>${dateLabel(w.date)}</h3><p class="muted">${w.entries.map(en=>`${esc(exercise(en.exerciseId).name)} (${en.sets.length} set)`).join(' · ')||'Henüz egzersiz yok.'}</p><div class="row"><button class="primary grow" data-action="open-workout" data-id="${esc(w.id)}">Aç / düzenle</button><button class="danger" data-action="delete-workout" data-id="${esc(w.id)}">Sil</button></div></section>`).join('')||'<div class="card">İlk antrenmanın burada görünecek.</div>'}`;}
+    function points(){return ordered().map(w=>{const sets=w.entries.find(en=>en.exerciseId===progressId)?.sets||[];return sets.length?{date:w.date,weight:Math.max(...sets.map(s=>s.weightKg)),rm:Math.max(...sets.map(rm))}:null;}).filter(Boolean);}
+    function progressView(){if(!exercise(progressId))progressId=data.exercises[0]?.id||'';const p=points();return `<h2>İlerleme</h2><section class="card"><label for="progress-exercise">Egzersiz</label><select id="progress-exercise">${options(data.exercises,progressId)}</select><p class="muted">Her nokta bir antrenman. Epley: ağırlık × (1 + tekrar / 30).</p>${p.length?`<div class="two"><div><small>En yüksek ağırlık</small><h2>${fmt(displayWeight(Math.max(...p.map(x=>x.weight))))} ${unit()}</h2></div><div><small>En yüksek tahmini 1RM</small><h2>${fmt(displayWeight(Math.max(...p.map(x=>x.rm))))} ${unit()}</h2></div></div><div class="legend"><span>● Ağırlık</span><span>● Tahmini 1RM</span></div><canvas id="chart" role="img" aria-label="Antrenmanlara göre ağırlık ve tahmini 1RM grafiği"></canvas><details><summary>Grafik verileri</summary>${p.map(x=>`<p>${dateLabel(x.date)}: ${fmt(displayWeight(x.weight))} / ${fmt(displayWeight(x.rm))} ${unit()}</p>`).join('')}</details>`:'<p>Grafik için bu egzersize bir set ekle.</p>'}</section>`;}
+    function settingsView(){return `<h2>Ayarlar</h2><section class="card stack"><div><label for="unit">Birim</label><select id="unit"><option value="kg" ${unit()==='kg'?'selected':''}>kg</option><option value="lb" ${unit()==='lb'?'selected':''}>lb</option></select></div><div><label for="theme">Tema</label><select id="theme"><option value="dark" ${data.settings.theme==='dark'?'selected':''}>Karanlık</option><option value="light" ${data.settings.theme==='light'?'selected':''}>Açık</option></select></div><div><label for="default-rest">Varsayılan dinlenme</label><select id="default-rest">${RESTS.map(s=>`<option value="${s}" ${s===data.settings.rest?'selected':''}>${s} saniye</option>`).join('')}</select></div></section><section class="card stack"><h3>Yedekleme</h3><p class="muted">Haftada bir ve tarayıcı verilerini silmeden önce JSON yedeğini Dosyalar / iCloud Drive’a kaydet. İçe aktarma mevcut verinin tamamını değiştirir.</p><button class="primary" data-action="export">Dışa aktar (JSON)</button><label for="import-file">İçe aktar (JSON dosyası seç)</label><input id="import-file" type="file" accept="application/json,.json">${brokenRaw!==null?'<button data-action="export-broken">Bozuk kaydı kurtarma dosyası olarak indir</button>':''}<button data-action="persist">Kalıcı depolama iste</button><p class="muted">Veriler yalnızca bu cihazda. Kalıcı depolama isteği kabul edilmeyebilir; yedek yerine geçmez.</p></section><section class="card"><h3>Kurulum / çevrimdışı</h3><p>HTTPS adresini aç, tarayıcının Paylaş menüsünden Ana Ekrana Ekle. İlk yüklemenin ardından aşağıdaki durumun hazır olmasını bekle.</p><p id="offline-state" role="status">${offlineMessage}</p><p class="muted">Uygulama açıkken sayaç görsel uyarı verir. Kilit ekranında alarm garantisi yoktur.</p></section>`;}
+    function drawChart(){
+      const c=$('#chart');if(!c)return;const ctx=c.getContext('2d');if(!ctx)return;const width=c.clientWidth||300,height=250,dpr=window.devicePixelRatio||1;c.width=width*dpr;c.height=height*dpr;ctx.scale(dpr,dpr);
+      const p=points(),css=getComputedStyle(document.documentElement),left=48,right=width-14,top=18,bottom=204,max=Math.max(1,...p.map(x=>displayWeight(x.rm)))*1.1;
+      const minDate=Math.min(...p.map(x=>Date.parse(x.date+'T12:00:00'))),maxDate=Math.max(...p.map(x=>Date.parse(x.date+'T12:00:00')));
+      const x=i=>maxDate===minDate?(left+right)/2:left+(right-left)*(Date.parse(p[i].date+'T12:00:00')-minDate)/(maxDate-minDate),y=v=>bottom-(bottom-top)*displayWeight(v)/max;
+      ctx.font='11px system-ui';ctx.lineWidth=1;for(let i=0;i<=4;i++){const yy=bottom-(bottom-top)*i/4;ctx.strokeStyle=css.getPropertyValue('--line');ctx.beginPath();ctx.moveTo(left,yy);ctx.lineTo(right,yy);ctx.stroke();ctx.fillStyle=css.getPropertyValue('--muted');ctx.textAlign='right';ctx.fillText(fmt(max*i/4),left-6,yy+4);}
+      for(const [key,color] of [['weight',css.getPropertyValue('--accent')],['rm','#6f9fff']]){ctx.strokeStyle=color;ctx.fillStyle=color;ctx.lineWidth=2;ctx.beginPath();p.forEach((v,i)=>i?ctx.lineTo(x(i),y(v[key])):ctx.moveTo(x(i),y(v[key])));ctx.stroke();p.forEach((v,i)=>{ctx.beginPath();ctx.arc(x(i),y(v[key]),3.5,0,Math.PI*2);ctx.fill();});}
+      ctx.fillStyle=css.getPropertyValue('--muted');ctx.textAlign='left';ctx.fillText(p[0].date,left,230);if(p.length>1&&maxDate!==minDate){ctx.textAlign='right';ctx.fillText(p.at(-1).date,right,246);}
+    }
+    // Sayaç saniye saymak yerine kalıcı bitiş saatini kullanır.
+    let timerFinished=false,offlineMessage='Çevrimdışı önbellek hazırlanıyor…';
+    function tick(){let remaining=0;if(data.timer){remaining=Math.max(0,Math.ceil((data.timer.endAt-Date.now())/1000));if(!remaining){data.timer=null;timerFinished=true;save();try{navigator.vibrate?.([200,100,200]);}catch(err){}toast('Dinlenme bitti. Sıradaki sete hazırsın.');}}
+      if($('#timer-number')){$('#timer-number').textContent=data.timer?`${Math.floor(remaining/60)}:${String(remaining%60).padStart(2,'0')}`:timerFinished?'Süre doldu ✓':'Hazır';$('#timer-card').classList.toggle('finished',timerFinished);$('#timer-note').textContent=timerFinished?'Dinlenme bitti. Sıradaki sete hazırsın.':'Set ekleyince başlar.';}}
+    function manage(){tab='workout';render();$('#content').innerHTML=`<h2>Egzersizler</h2><button class="primary full" data-action="add-exercise">Egzersiz ekle</button><p class="muted">Silinen egzersiz geçmiş kayıtlar için arşivlenir.</p>${data.exercises.filter(e=>!e.archived).map(e=>`<section class="card"><h3>${esc(e.name)}</h3><p class="tag">${e.group}</p><div class="row"><button class="grow" data-action="edit-exercise" data-id="${esc(e.id)}">Düzenle</button><button class="danger" data-action="delete-exercise" data-id="${esc(e.id)}">Sil</button></div></section>`).join('')}<button class="full" data-action="back">Antrenmana dön</button>`;}
+    function openExercise(id){editingExercise=id||null;const e=exercise(id);$('#dialog-title').textContent=e?'Egzersiz düzenle':'Egzersiz ekle';$('#exercise-name').value=e?.name||'';$('#exercise-group').innerHTML=GROUPS.map(g=>`<option ${g===e?.group?'selected':''}>${g}</option>`).join('');$('#exercise-dialog').showModal();}
+    function download(text,name){const url=URL.createObjectURL(new Blob([text],{type:'application/json'})),a=document.createElement('a');a.href=url;a.download=name;document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),60000);}
+    // Olaylar: kullanıcı metni HTML'e yalnızca esc() ile girer.
+    document.addEventListener('click',async ev=>{
+      const b=ev.target.closest('button');if(!b)return;
+      if(b.dataset.tab){tab=b.dataset.tab;render();return;}
+      if(b.dataset.step){const input=$('#'+b.dataset.step),n=num(input.value);if(!Number.isFinite(n))return toast('Önce geçerli sayı gir.');const step=b.dataset.step==='weight'?2.5*(unit()==='lb'?LB:1):1;input.value=String(round(Math.max(b.dataset.step==='weight'?0:1,n+Number(b.dataset.sign)*step)));return;}
+      const id=b.dataset.id;
+      switch(b.dataset.action){
+        case 'new-workout':{const w={id:uid(),date:today(),createdAt:Date.now(),entries:[]};data.workouts.push(w);data.activeWorkoutId=w.id;selected='';save();render();break;}
+        case 'open-workout':data.activeWorkoutId=id;selected=data.workouts.find(w=>w.id===id)?.entries[0]?.exerciseId||'';tab='workout';save();render();break;
+        case 'delete-workout':if(confirm('Bu antrenman ve tüm setleri silinsin mi?')){data.workouts=data.workouts.filter(w=>w.id!==id);if(data.activeWorkoutId===id)data.activeWorkoutId=null;save();render();}break;
+        case 'manage':manage();break;
+        case 'back':render();break;
+        case 'add-exercise':openExercise();break;
+        case 'edit-exercise':openExercise(id);break;
+        case 'delete-exercise':if(confirm('Egzersiz listeden kaldırılsın mı? Geçmiş setleri korunur.')){exercise(id).archived=true;if(selected===id)selected='';save();manage();}break;
+        case 'delete-set':if(confirm('Bu set silinsin mi?')){for(const en of active().entries)en.sets=en.sets.filter(s=>s.id!==id);save();render();}break;
+        case 'stop-timer':data.timer=null;timerFinished=false;save();tick();break;
+        case 'export':download(JSON.stringify(data,null,2),`set-defteri-${today()}.json`);toast('Yedek dosyasını Dosyalar’a kaydet.');break;
+        case 'export-broken':download(brokenRaw,`set-defteri-kurtarma-${today()}.json`);break;
+        case 'persist':try{const granted=await navigator.storage?.persist?.();toast(granted?'Kalıcı depolama kabul edildi. Yedek almayı sürdür.':'Kalıcı depolama verilmedi veya desteklenmiyor.');}catch(err){toast('Depolama isteği tamamlanamadı.');}break;
+      }
+    });
+    $('#close-dialog').addEventListener('click',()=>$('#exercise-dialog').close());
+    $('#exercise-form').addEventListener('submit',ev=>{ev.preventDefault();const name=$('#exercise-name').value.trim();if(!name)return toast('Egzersiz adı boş olamaz.');if(editingExercise){const e=exercise(editingExercise);e.name=name;e.group=$('#exercise-group').value;}else{const e={id:uid(),name,group:$('#exercise-group').value,archived:false};data.exercises.push(e);selected=e.id;}save();$('#exercise-dialog').close();manage();});
+    document.addEventListener('submit',ev=>{if(ev.target.id!=='set-form')return;ev.preventDefault();const weight=num($('#weight').value),reps=num($('#reps').value);if(!Number.isFinite(weight)||weight<0||toKg(weight)>10000||!Number.isInteger(reps)||reps<1||reps>1000)return toast('Ağırlık 0–10.000 kg, tekrar 1–1000 tam sayı olmalı.');const w=active();if(!w||!exercise(selected))return;let en=w.entries.find(en=>en.exerciseId===selected);if(!en){en={exerciseId:selected,sets:[]};w.entries.push(en);}en.sets.push({id:uid(),weightKg:toKg(weight),reps,at:Date.now()});data.timer={endAt:Date.now()+data.settings.rest*1000,duration:data.settings.rest};timerFinished=false;save();render();});
+    document.addEventListener('change',async ev=>{
+      const el=ev.target;
+      if(el.dataset.set){const s=active()?.entries.flatMap(en=>en.sets).find(s=>s.id===el.dataset.set),n=num(el.value);if(!s)return;const weight=el.dataset.field==='weightKg';if(!Number.isFinite(n)||(weight?(n<0||toKg(n)>10000):(!Number.isInteger(n)||n<1||n>1000))){el.value=weight?round(displayWeight(s.weightKg)):s.reps;return toast('Geçersiz değer; önceki değer korundu.');}s[el.dataset.field]=weight?toKg(n):n;save();const badges=records();document.querySelectorAll("[data-pr]").forEach(row=>{row.querySelectorAll(".badge").forEach(b=>b.remove());for(const label of badges.get(row.dataset.pr)||[]){const b=document.createElement("span");b.className="badge";b.textContent=label;row.append(b);}});return;}
+      switch(el.id){
+        case 'workout-exercise':selected=el.value;render();break;
+        case 'progress-exercise':progressId=el.value;render();break;
+        case 'workout-date':if(!/^\d{4}-\d{2}-\d{2}$/.test(el.value)||!Number.isFinite(Date.parse(el.value+'T12:00:00'))){render();return toast('Geçerli tarih seç.');}active().date=el.value;save();render();break;
+        case 'unit':data.settings.unit=el.value;save();render();break;
+        case 'theme':data.settings.theme=el.value;save();render();break;
+        case 'default-rest':case 'rest-duration':data.settings.rest=Number(el.value);save();break;
+        case 'import-file':{
+          const file=el.files[0];if(!file)return;
+          try{if(file.size>10*1024*1024)throw Error('Dosya 10 MB sınırını aşıyor.');const imported=validate(JSON.parse(await file.text()));if(!confirm('Mevcut verinin tamamı bu yedekle değiştirilecek. Önce dışa aktardıysan devam et.'))return;
+            // Önce diske yaz: yazılamazsa mevcut bellek verisini değiştirme.
+            try{localStorage.setItem(KEY,JSON.stringify(imported));}catch(err){throw Error('Yedek cihaza yazılamadı. Mevcut verin değiştirilmedi.');}
+            data=imported;brokenRaw=null;storageBlocked=false;selected='';progressId='';timerFinished=false;save();render();toast('Yedek içe aktarıldı.');
+          }catch(err){toast('İçe aktarılamadı: '+err.message);}finally{el.value='';}break;
+        }
+      }
+    });
+    window.addEventListener('resize',()=>{if(tab==='progress')drawChart();});
+    document.addEventListener('visibilitychange',()=>{if(!document.hidden)tick();});
+    window.addEventListener('storage',ev=>{if(ev.key!==KEY)return;try{if(ev.newValue===null){storageBlocked=true;warning('Başka sekmede cihaz kaydı silindi. Çıkmadan bellekteki veriyi dışa aktar.');return;}data=validate(JSON.parse(ev.newValue));storageBlocked=false;brokenRaw=null;$('#storage-warning').hidden=true;render();toast('Diğer sekmedeki değişiklikler yüklendi.');}catch(err){storageBlocked=true;warning('Başka sekmeden geçersiz veri geldi. Bellekteki veriyi dışa aktar.');}});
+    // Apple için gerçek PNG data URI. Manifest ikonları bağımsız SVG'dir.
+    const icon=document.createElement('canvas');icon.width=icon.height=180;const ic=icon.getContext('2d');if(ic){ic.fillStyle='#10141c';ic.fillRect(0,0,180,180);ic.fillStyle='#b5f46a';ic.fillRect(35,55,24,70);ic.fillRect(121,55,24,70);ic.fillRect(59,81,62,18);$('#apple-icon').href=icon.toDataURL('image/png');}
+    render();if(!storageBlocked)save();setInterval(tick,250);
+    // Güncelleme mevcut sekmeyi zorla yenilemez. Yeni SW tüm sekmeler kapanınca etkinleşir.
+    async function setupOffline(){try{if(!('serviceWorker'in navigator)||!window.isSecureContext)throw Error('HTTPS gerekli veya tarayıcı desteklemiyor.');await navigator.serviceWorker.register('./sw.js');await navigator.serviceWorker.ready;offlineMessage='Çevrimdışı önbellek hazır ✓';}catch(err){offlineMessage='Çevrimdışı hazır değil: '+err.message;}if($('#offline-state'))$('#offline-state').textContent=offlineMessage;}
+    setupOffline();
+  </script>
+</body>
+</html>
+
